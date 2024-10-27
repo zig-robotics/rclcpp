@@ -1,0 +1,40 @@
+.{
+    .name = "rclcpp",
+    .version = "28.1.5",
+    .dependencies = .{
+        .rclcpp = .{
+            .lazy = true,
+            .url = "https://github.com/ros2/rclcpp/archive/tags/28.1.5.tar.gz", // Jazzy
+            .hash = "122070f09ef6536fc9b6506a1d6134fc208172f7194a4d31749a98ebb8b311087bc3",
+        },
+        .rclcpp_visibility_control = .{
+            .lazy = true,
+            .url = "https://github.com/zig-robotics/ros2-rclcpp/archive/435f377374a363889b95ce011020d80d3682c24e.tar.gz", // Jazzy
+            .hash = "12203a2256fa52f58ce90669ba25cdc9e808258cab37b708aabc3987d90e76f797f8",
+        },
+        .rcl = .{
+            .url = "https://github.com/zig-robotics/rcl/archive/383a5c1f60d976ec04028af5481f8165e0b054a2.tar.gz", // Jazzy
+            .hash = "1220236c52ec8bffb6b1254d2548a9f0a76bc4728936223c9a19cd515a58f04613ca",
+        },
+        .rcpputils = .{
+            .url = "https://github.com/zig-robotics/rcpputils/archive/bfe7a3ae1ad8910145dbd33e98b0063be01359d1.tar.gz", // Jazzy
+            .hash = "1220248f4fb42a3e6c2281152d47d38c817e3bebb9548de5cb4d16bd934e1f1048d7",
+        },
+        .ros2_tracing = .{
+            .url = "https://github.com/zig-robotics/ros2_tracing/archive/59602add3bf2fda2b51871a1ae7791164cbaede1.tar.gz",
+            .hash = "1220814ea553a4e1fe35c4fc6f2164c0d3adde48bd996a1c892d35f68d8f6407d7e6",
+        },
+        .libstatistics_collector = .{
+            .url = "https://github.com/zig-robotics/libstatistics_collector/archive/5d19c31ae2ec8e143a2832dce3fe0eebebab922d.tar.gz",
+            .hash = "1220364b3e8cb748f828f742fa949b411728ded9be81f3e4155b13f5a3a548f0078b",
+        },
+        .ament_index = .{
+            .url = "https://github.com/zig-robotics/ament_index/archive/57f374999fa3fe1b1fc4c12fdfbd7f8c31e5ad7e.tar.gz",
+            .hash = "1220d769e15dcdda2c3e033c72d86c6d19db87a6dbe117a3a1c707ba74a6aecf5154",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
